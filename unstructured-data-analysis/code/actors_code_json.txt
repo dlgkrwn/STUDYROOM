@@ -1,0 +1,22 @@
+json.string <- c(
+  '[',
+  '{',
+  '"name" : "Sean Connery",',
+  '"sex" : "male",',
+  '"age" : 32',
+  '},',
+  '{',
+  '"name" : "Brit Ekland",',
+  '"sex" : "female",',
+  '"age" : 28',
+  '},',
+  '{',
+  '"name" : "Roger Moore",',
+  '"sex" : "male",',
+  '"age" : null',
+  '}',
+  ']'
+)
+writeLines(json.string, "actors.json")
+library(pander)
+openFileInOS("actors.json")
